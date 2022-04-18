@@ -1,7 +1,9 @@
 <template>
   <div class="wrapper">
     <div class="item">
-      <i class="iconfont pcolor icon-github-fill"></i>
+      <a href="https://github.com/007sem/easy-mark"
+        ><i class="iconfont pcolor icon-github-fill"></i
+      ></a>
     </div>
     <div class="item" @click="changeTheme">
       <i class="iconfont pcolor" :class="dark ? 'icon-sun' : 'icon-Moon'"></i>
@@ -42,6 +44,11 @@ changeTheme()
   height: 100%;
   width: 80px;
   margin: 28px auto 0;
+}
+.item {
+  a {
+    text-decoration: none;
+  }
 }
 </style>
 <style lang="less">
